@@ -1,0 +1,22 @@
+{
+  "name": "jQuery-Collapse",
+  "version": "1.0.1",
+  "description": "A lightweight and flexible jQuery plugin that allows you to collapse content",
+  "main": "src/jquery.collapse.js",
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "jsdom": "*",
+    "sinon": "*",
+    "jquery": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielstocks/jQuery-Collapse.git"
+  },
+  "author": "Daniel Stocks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielstocks/jQuery-Collapse/issues"
+  }
+}

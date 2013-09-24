@@ -1,0 +1,6 @@
+--require jsdom
+--require sinon
+--require jQuery
+--require should
+--reporter nyan
+--ui bdd
