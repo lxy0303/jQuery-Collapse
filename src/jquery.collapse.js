@@ -30,9 +30,8 @@
 
     // For every pair of elements in given
     // element, create a section
-    _this.$el.find(query).each(function() {
-      _this.sections.push(new Section($(this), _this));
-    });
+    _this.$el.find(query)
+      .each($.proxy(_this.addSection, _this));
 
     // Capute ALL the clicks!
     (function(scope) {
@@ -42,6 +41,9 @@
   }
 
   Collapse.prototype = {
+    addSection: function(i, el) {
+      this.sections.push(new Section($(el), this));
+    },
     handleClick: function(e) {
       e.preventDefault();
       var sections = this.sections,
